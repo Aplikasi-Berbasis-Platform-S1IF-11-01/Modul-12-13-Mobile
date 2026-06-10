@@ -274,7 +274,7 @@ Berikut adalah tangkapan layar (*screenshot*) dari aplikasi yang menunjukkan fit
 
 *(Ganti gambar ini dengan meletakkan hasil screenshot ke dalam folder `assets/` dengan nama yang sesuai)*
 
-### A. Halaman Utama (Glassmorphism Modern UI)
+### A. Halaman Utama
 <img src="assets/home.png" alt="Halaman Utama" width="300">
 
 ### B. Menekan Tombol Tambah +1

@@ -297,11 +297,11 @@ Berikut adalah tangkapan layar (*screenshot*) dari aplikasi yang menunjukkan fit
 
 *(Ganti gambar ini dengan meletakkan hasil screenshot ke dalam folder `assets/` dengan nama yang sesuai)*
 
-### A. Halaman Utama
+### 1. Halaman Utama
 <img src="assets/1.jpeg" alt="Halaman Utama" width="300">
 
-### B. Menekan Tombol Tambah +1 dan notifikasi Pop-Up (counter bertambah)
+### 2. Menekan Tombol Tambah +1 dan notifikasi Pop-Up (counter bertambah)
 <img src="assets/2.jpeg" alt="Proses Tambah" width="300">
 
-### C. Menekan Tombol Tambah +1 dan notifikasi Pop-Up (riset ulang)
+### 3. Menekan riset dan notifikasi Pop-Up (riset ulang)
 <img src="assets/3.jpg" alt="Notifikasi Penambahan" width="300">

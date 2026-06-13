@@ -139,7 +139,7 @@ class CounterPage extends StatelessWidget {
           elevation: 8,
           icon: const Icon(Icons.add_circle_outline_rounded, size: 28),
           label: const Text(
-            'TAMBAH COUTER',
+            'TAMBAH COUNTER',
             style: TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.bold,

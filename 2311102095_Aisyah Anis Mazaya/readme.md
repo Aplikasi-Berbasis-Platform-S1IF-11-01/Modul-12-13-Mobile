@@ -55,7 +55,7 @@ IMPLEMENTASI PROVIDER & NOTIFIKASI PADA FLUTTER
 ### Dasar Teori
 1. State Management (Provider): Merupakan pustaka (library) pengelolaan status aplikasi yang direkomendasikan dalam ekosistem Flutter. Pendekatan ini memisahkan logika data bisnis secara terpusat dari elemen presentasi visual (UI). Melalui arsitektur ini, data di dalam aplikasi dapat didistribusikan secara efisien ke widget mana pun yang membutuhkan tanpa harus melewati proses pengiriman parameter antar-konstruktor secara berantai (prop drilling).
 
-2. ChangeNotifier: Kelas fundamental dari Flutter SDK yang berfungsi sebagai model data penampung state. Kelas ini dilengkapi dengan fungsi notifyListeners(). Ketika terjadi perubahan data di dalam variabel model (misalnya nilai counter bertambah) pemanggilan fungsi tersebut akan mengirimkan sinyal pembaruan secara otomatis ke komponen antarmuka yang mengamati model tersebut.
+2. ChangeNotifier: Kelas fundamental dari Flutter SDK yang berfungsi sebagai model data penampung state. Kelas ini dilengkapi dengan fungsi notifyListeners(). Ketika terjadi perubahan data di dalam variabel model (misalnya nilai counter bertambah pemanggilan fungsi tersebut akan mengirimkan sinyal pembaruan secara otomatis ke komponen antarmuka yang mengamati model tersebut.
 
 3. ChangeNotifierProvider: Sebuah widget khusus dari paket provider yang bertugas untuk menginstansiasi kelas ChangeNotifier dan menyuntikkannya ke dalam widget tree. Komponen ini berfungsi sebagai jembatan yang mendengarkan sinyal perubahan dari ChangeNotifier agar data tersebut siap dikonsumsi oleh sub-pohon widget di bawahnya.
 
@@ -208,7 +208,7 @@ class CounterPage extends StatelessWidget {
           elevation: 8,
           icon: const Icon(Icons.add_circle_outline_rounded, size: 28),
           label: const Text(
-            'TAMBAH COUTER',
+            'TAMBAH COUNTER',
             style: TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.bold,
@@ -221,7 +221,7 @@ class CounterPage extends StatelessWidget {
   }
 }
 ```
-File ini merupakan titik masuk utama (entry point) aplikasi sekaligus pengatur tata letak antarmuka pengguna (UI) dengan menerapkan tema modern soft pink berbasis Material 3. Fungsi inti dari komponen ini adalah membungkus aplikasi dengan ChangeNotifierProvider agar data counter dapat diakses secara global, serta menggunakan komponen Consumer untuk merender ulang teks angka secara spesifik tanpa harus memuat ulang seluruh halaman saat tombol penambahan ditekan.
+`main.dart` File ini merupakan titik masuk utama (entry point) aplikasi sekaligus pengatur tata letak antarmuka pengguna (UI) dengan menerapkan tema modern soft pink berbasis Material 3. Fungsi inti dari komponen ini adalah membungkus aplikasi dengan ChangeNotifierProvider agar data counter dapat diakses secara global serta menggunakan komponen Consumer untuk merender ulang teks angka secara spesifik tanpa harus memuat ulang seluruh halaman saat tombol penambahan ditekan.
 ---
 
 ### counter_provider.dart
@@ -242,7 +242,7 @@ class CounterProvider extends ChangeNotifier {
   }
 }
 ```
-File ini bertindak sebagai lapisan logika bisnis (state management) yang mengatur siklus hidup data aplikasi. Fungsi intinya adalah menyimpan variabel nilai counter secara terpusat dan menyediakan metode `incrementCounter()`. Ketika tombol ditekan, metode tersebut akan menambah nilai angka, memicu fungsi `notifyListeners()` untuk menyiarkan perubahan data ke antarmuka pengguna, serta memerintahkan `NotificationService` untuk menampilkan notifikasi baru.
+`counter_provider.dart` File ini bertindak sebagai lapisan logika bisnis (state management) yang mengatur siklus hidup data aplikasi. Fungsi intinya adalah menyimpan variabel nilai counter secara terpusat dan menyediakan metode incrementCounter(). Ketika tombol ditekan, metode tersebut akan menambah nilai angka, memicu fungsi notifyListeners() untuk menyiarkan perubahan data ke antarmuka pengguna serta memerintahkan NotificationService untuk menampilkan notifikasi baru.
 ---
 
 ### notification_service.dart
@@ -290,11 +290,10 @@ class NotificationService {
   }
 }
 ```
-File ini berfungsi sebagai penyedia layanan notifikasi lokal pada perangkat menggunakan pola desain Singleton agar satu objek dapat digunakan secara global. Fungsi inti dari file ini adalah melakukan inisialisasi awal pengaturan notifikasi untuk sistem operasi Android, serta menyediakan fungsi `showNotification()` untuk memicu dan menampilkan bilah pesan pop-up di layar HP yang memuat informasi pembaruan nilai counter secara real-time.
+`notification_service.dart` File ini berfungsi sebagai penyedia layanan notifikasi lokal pada perangkat menggunakan pola desain Singleton agar satu objek dapat digunakan secara global. Fungsi inti dari berkas ini adalah melakukan inisialisasi awal pengaturan notifikasi untuk sistem operasi Android, serta menyediakan fungsi showNotification() untuk memicu dan menampilkan bilah pesan pop-up di layar HP yang memuat informasi pembaruan nilai counter secara real-time.
 ---
 
-## TAMPILAN 
-![Halaman](asset/sebelum.jpeg)
-![Halaman](asset/sesudah.jpeg)
-
+### TAMPILAN 
+<img src="asset/sebelum.jpeg" width="45%" />
+<img src="asset/sesudah.jpeg" width="45%" />
 

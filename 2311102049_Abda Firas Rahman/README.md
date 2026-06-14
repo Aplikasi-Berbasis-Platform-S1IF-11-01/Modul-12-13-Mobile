@@ -26,8 +26,8 @@ IMPLEMENTASI PROVIDER & NOTIFIKASI PADA FLUTTER
   <h3>Disusun Oleh :</h3>
 
   <p>
-    <strong>Aisyah Anis Mazaya</strong><br>
-    <strong>2311102095</strong><br>
+    <strong>Abda Firas Rahman</strong><br>
+    <strong>2311102049</strong><br>
     <strong>S1 IF-11-REG01</strong>
   </p>
 

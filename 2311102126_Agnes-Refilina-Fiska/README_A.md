@@ -211,4 +211,4 @@ Berikut adalah tangkapan layar (*screenshot*) dari aplikasi yang menunjukkan fit
 
 ### 3. Menekan riset dan notifikasi Pop-Up (riset ulang)
 
-<img src="aset/3.jpg" alt="Notifikasi Penambahan" width="300">
+<img src="aset/3.jpeg" alt="Notifikasi Penambahan" width="300">

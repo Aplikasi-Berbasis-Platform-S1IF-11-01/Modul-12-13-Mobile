@@ -4,7 +4,7 @@
   <br />
   <h3>MODUL 12 & 13<br> Implementasi Provider dan Notifikasi pada Flutter </h3>
   <br />
-  <img src="logoTelkom.png" alt="Logo" width="300"> 
+  <img src="LogoTelkom.png" alt="Logo" width="300"> 
   <br />
   <br />
   <br />
